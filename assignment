@@ -62,26 +62,31 @@ td.selected {
 </table>
 
 <script>
-    
+   <thead>
+  <tr>
+    <th class="col1" onclick="fun(my_data)"> Col 1</th>
+    <th class="col2" onclick="fun(my_data)"> Col 2</th>
+  </tr>
+ </thead> 
         var trace2 = {
-          data2.scv,
+          DATA1,
           type: "boxplot"
         };
 
         var data4 = [trace2];
 
-        Plotly.newPlot("myDiv2", data4);
+        Plotly.newPlot("boxplot", data4);
         
     
         var trace3 = {
 
-          data1.csv,
-          type: "pie"
+          DATA2,
+          type: "Bar"
         };
 
         var data5 = [trace3];
 
-        Plotly.newPlot("myDiv3", data5);
+        Plotly.newPlot("barchar", data5);
     </script>
 
 
